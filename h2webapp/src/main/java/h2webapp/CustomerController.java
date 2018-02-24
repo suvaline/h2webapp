@@ -24,13 +24,13 @@ public class CustomerController {
 	@RequestMapping("new")
 	public ModelAndView add(@RequestParam String firstname, 
 							@RequestParam String lastname, 
-							@RequestParam Date dateofbirth, 
+							@RequestParam String dateofbirth, 
 							@RequestParam String username, 
 							@RequestParam String password)
 	{
 		
-		
-		Customer newcust= new Customer(firstname,lastname, dateofbirth, username, password);
+		Date date=Date.valueOf(dateofbirth);
+		Customer newcust= new Customer(firstname,lastname, date, username, password);
 		
 		int customerok=customerDao.save(newcust);
 		ModelAndView mv = new ModelAndView();
@@ -69,11 +69,12 @@ public class CustomerController {
 	  public ModelAndView Update(@RequestParam int id, 
 			  					@RequestParam String firstname,
 			  					@RequestParam String lastname,
-			  					@RequestParam Date dateofbirth,
+			  					@RequestParam String dateofbirth,
 			  					@RequestParam String username,
 			  					@RequestParam String password) {
 		  ModelAndView mv=new ModelAndView();
-		  Customer cust=new Customer(id,firstname,lastname,dateofbirth,username,password);
+		  Date date=Date.valueOf(dateofbirth);
+		  Customer cust=new Customer(id,firstname,lastname,date,username,password);
 		  int success= customerDao.update(cust);
 		  List<Customer> customers= customerDao.getCustomers();
 		  mv.clear();

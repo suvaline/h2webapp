@@ -1,7 +1,7 @@
-C:\katsetus\workspace\h2webapp\src\main\java\h2webapp\CustomerDao.java
-C:\katsetus\workspace\h2webapp\src\main\java\h2webapp\MvcConfig.java
-C:\katsetus\workspace\h2webapp\src\main\java\h2webapp\MyFrontController.java
-C:\katsetus\workspace\h2webapp\src\main\java\h2webapp\CustomerController.java
-C:\katsetus\workspace\h2webapp\src\main\java\h2webapp\DbConfig.java
-C:\katsetus\workspace\h2webapp\src\main\java\h2webapp\Customer.java
+C:\katsetus\workspace\h2webapp\src\main\java\controller\CustomerController.java
+C:\katsetus\workspace\h2webapp\src\main\java\model\CustomerDao.java
+C:\katsetus\workspace\h2webapp\src\main\java\config\DbConfig.java
+C:\katsetus\workspace\h2webapp\src\main\java\controller\MyFrontController.java
+C:\katsetus\workspace\h2webapp\src\main\java\model\Customer.java
+C:\katsetus\workspace\h2webapp\src\main\java\config\MvcConfig.java
 C:\katsetus\workspace\h2webapp\src\main\java\h2webapp\CustomerDaoTest.java

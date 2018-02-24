@@ -11,5 +11,5 @@ xmlns:ctx="http://www.springframework.org/schema/context"
 	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
 	<ctx:annotation-config></ctx:annotation-config>
-	<ctx:component-scan base-package="h2webapp"></ctx:component-scan>
+	<ctx:component-scan base-package="controller, model, config"></ctx:component-scan>
 </beans>
